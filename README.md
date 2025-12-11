@@ -13,3 +13,4 @@ This repository contains a minimal Flask web server that exposes a `/hello` endp
    python app.py
    ```
 3. Visit `http://localhost:5000/hello` to receive the current date and time.
+4. Visit `http://localhost:5000/image` to see the `static/logo.svg` image rendered in a simple HTML page.
