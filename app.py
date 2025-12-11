@@ -1,21 +1,14 @@
-from datetime import datetime
-
-from flask import Flask, jsonify
+from flask import Flask
 
 app = Flask(__name__)
 
+@app.route("/")
+def index():
+    return "これは / のトップページです（codex-hello3）"
 
 @app.route("/hello")
-def hello() -> str:
-    """Return the current date and time as JSON."""
-    now = datetime.now()
-    return jsonify(date=now.strftime("%Y-%m-%d"), time=now.strftime("%H:%M:%S"))
-
-
-def create_app() -> Flask:
-    """Application factory used by WSGI servers."""
-    return app
-
+def hello():
+    return "Hello Codex 3!"
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(debug=True)
