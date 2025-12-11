@@ -1,1 +1,15 @@
 # codex-hello3
+
+This repository contains a minimal Flask web server that exposes a `/hello` endpoint.
+
+## Usage
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the server:
+   ```bash
+   python app.py
+   ```
+3. Visit `http://localhost:5000/hello` to receive the current date and time.
